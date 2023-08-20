@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz App</title>
+  <link rel="stylesheet" type="text/css" href="quiz.css">
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+
+    <nav id="nav">
+        <div class="navTop">
+            <div class="navItem">
+                <h2>QuizOmania.com</h2>
+                <!-- <img decoding="async" src="./img/sneakers.png" alt=""> -->
+            </div>
+            <div class="navItem">
+                <div class="search">
+                    <input type="text" placeholder="Search..." class="searchInput">
+                    <img decoding="async" src="search.png.png" width="20" height="20" alt="" class="searchIcon">
+                </div>
+            </div>
+            <div class="navItem">
+                <span class="limitedOffer">LOGIN/REGISTER</span>
+            </div>
+        </div>
+        <div class="navBottom">
+            <h3 class="menuItem">HOME </h3>
+            <h3 class="menuItem">PREVIOUS QUIZ</h3>
+            <h3 class="menuItem">CREATE OWN QUIZ</h3>
+            <h3 class="menuItem">SUBJECTS </h3>
+            <h3 class="menuItem">RESULTS</h3>
+            <h3 class="menuItem">CONTACT</h3>
+            <h3 class="menuItem">ABOUT US</h3>
+        </div>
+    </nav>
+
+
+
+
+
+  <div class="quiz-container">
+    <h1>Quiz Box</h1>
+    <div id="question-container">
+      <p id="question-text"></p>
+      <div id="answer-buttons"></div>
+    </div>
+    <div id="controls-container">
+      <button id="start-button">Start Quiz</button>
+      
+      <div id="timer-container">
+        <span id="timer-text">Time Left seconds: <span id="timer">30</span></span>
+      </div>
+    </div>
+  </div>
+  <script>
+   swal({
+  title: "Best of luck!",
+  text: "All questions are compulsory",
+  icon: "success",
+  button: "Thanks",
+});
+   </script>
+  <script src="quiz.js"></script>
+</body>
+</html>
